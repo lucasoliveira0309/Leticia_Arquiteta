@@ -776,8 +776,21 @@
             height: 20px;
         }
 
+        /* Esconde a quebra de linha em telas grandes (computador) */
+.quebra-mobile {
+  display: none;
+}
+
+/* Mostra a quebra de linha em telas menores que 768px (celular) */
+@media (max-width: 768px) {
+  .quebra-mobile {
+    display: block; 
+  }
+}
         /* ============ RESPONSIVE ============ */
         @media (max-width:860px) {
+          
+
             :root {
                 --nav-h: 72px;
             }
